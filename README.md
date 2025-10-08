@@ -33,68 +33,80 @@ A API implementa **CRUD completo**, **autenticação de usuários com JWT**, **c
 ## ⚡ Como Executar o Projeto
 
 ### 1️⃣ Clonar o repositório
-```bash
-git clone https://github.com/Pellegata/api-sequelize-sqlite.git
+
+    git clone https://github.com/Pellegata/api-sequelize-sqlite.git
+
 
 2️⃣ Instalar as dependências
 
-npm install
+    npm install
 
 3️⃣ Criar o arquivo .env
 
 Crie um arquivo .env na raiz do projeto e adicione as variáveis:
 
-JWT_SECRET=seu_segredo_aqui
-PORT=3000
+    JWT_SECRET=seu_segredo_aqui
+    PORT=3000
 
 4️⃣ Executar as migrações do Sequelize
 
-npx sequelize-cli db:migrate
+    npx sequelize-cli db:migrate
 
 5️⃣ Rodar o servidor
 
-npm start
+    npm start
 
 A API estará disponível em:
+
 👉 http://localhost:3000
+
 🔒 Rotas Principais
-Método	Rota	Descrição
+
+Método | Rota | Descrição
+
 POST	/register	Cadastra um novo usuário
+
 POST	/login	Faz login e retorna o token JWT
+
 GET	/users	Lista todos os usuários (rota protegida)
+
 GET	/users/:id	Busca um usuário pelo ID (rota protegida)
+
 PUT	/users/:id	Atualiza um usuário (rota protegida)
+
 DELETE	/users/:id	Remove um usuário (rota protegida)
+
 🧩 Autenticação
 
-    O login retorna um token JWT que deve ser enviado no header Authorization em rotas protegidas.
+O login retorna um token JWT que deve ser enviado no header Authorization em rotas protegidas.
 
-    Exemplo:
+Exemplo:
 
 Authorization: Bearer seu_token_aqui
 
-📚 Aprendizados
+## 📚 Aprendizados
 
 Durante o desenvolvimento desta API, aprofundei meus conhecimentos em:
 
-    Boas práticas REST
+-**Boas práticas REST**
 
-    Autenticação e autorização com JWT
+-**Autenticação e autorização com JWT**
 
-    Criptografia de senhas com BcryptJS
+-**Criptografia de senhas com BcryptJS**
 
-    ORM com Sequelize e manipulação de bancos relacionais
+-**ORM com Sequelize e manipulação de bancos relacionais**
 
-    Configuração de ambiente com dotenv
+-**Configuração de ambiente com dotenv**
 
-    Estruturação de projetos backend profissionais
+-**Estruturação de projetos backend profissionais**
 
-👨‍🏫 Agradecimentos
+## 👨‍🏫 Agradecimentos
 
 Agradeço aos instrutores Juliana Amoasei e Raphael Girão pela didática e clareza no ensino, e à Alura pelo excelente conteúdo e suporte à evolução contínua no desenvolvimento web.
-🧑‍💻 Autor
+
+## 🧑‍💻 Autor
 
 Guido Pell
 📎 https://www.linkedin.com/in/guidopellegata
 
-    “A prática constante transforma aprendizado em habilidade.” 🚀
+## “A prática constante transforma aprendizado em habilidade.” 🚀
